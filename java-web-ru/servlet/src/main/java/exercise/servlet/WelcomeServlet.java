@@ -16,7 +16,7 @@ public final class WelcomeServlet extends HttpServlet {
             throws IOException, ServletException {
 
         PrintWriter out = response.getWriter();
-        out.println("Hello, World!");
+        out.println("Hello, Hexlet!");
     }
 }
 // END
