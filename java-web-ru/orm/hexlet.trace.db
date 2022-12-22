@@ -1,0 +1,29 @@
+2022-12-22 10:02:48 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "ARTICLE" не найдена
+Table "ARTICLE" not found; SQL statement:
+alter table article drop constraint if exists fk_article_category_id [42102-200]
+2022-12-22 12:49:07 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 7 more
+Caused by: java.lang.IllegalStateException: File corrupt reading chunk at position 32768 [1.4.200/6]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.Chunk.readChunkHeader(Chunk.java:172)
+	at org.h2.mvstore.MVStore.moveChunk(MVStore.java:1916)
+	at org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:1839)
+	at org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:1772)
+	at org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:1753)
+	at org.h2.mvstore.MVStore.compactFile(MVStore.java:1970)
+	at org.h2.mvstore.MVStore.closeStore(MVStore.java:1170)
+	at org.h2.mvstore.MVStore.close(MVStore.java:1133)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:404)
+	... 5 more
