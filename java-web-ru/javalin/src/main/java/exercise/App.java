@@ -50,19 +50,19 @@ public final class App {
         // BEGIN
         app.routes(() -> {
             path("articles", () -> {
+
                 get(ArticleController.listArticles);
                 post(ArticleController.createArticle);
                 get("new", ArticleController.newArticle);
+
                 path("{id}", () -> {
+
                     get(ArticleController.showArticle);
-                    path("edit", () -> {
-                        get(ArticleController.editArticle);
-                        post(ArticleController.updateArticle);
-                    });
-                    path("delete", () -> {
-                        get(ArticleController.deleteArticle);
-                        post(ArticleController.destroyArticle);
-                    });
+                    get("edit", ArticleController.editArticle);
+                    post("edit", ArticleController.updateArticle);
+                    get("delete", ArticleController.deleteArticle);
+                    post("delete", ArticleController.destroyArticle);
+
                 });
             });
         });
