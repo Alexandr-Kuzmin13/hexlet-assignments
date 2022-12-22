@@ -87,7 +87,7 @@ public final class ArticleController {
         long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
 
         Category category = new QCategory()
-                .id.equalTo(categoryId)
+                //.id.equalTo(categoryId)
                 .findOne();
 
         new QArticle()
