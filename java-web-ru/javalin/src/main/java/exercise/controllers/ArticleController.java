@@ -86,10 +86,6 @@ public final class ArticleController {
 
         long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
 
-        Category category = new QCategory()
-                .id.equalTo(categoryId)
-                .findOne();
-
         long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
 
         new QArticle()
@@ -97,7 +93,7 @@ public final class ArticleController {
                 .asUpdate()
                 .set("title", title)
                 .set("body", body)
-                .set("category", category)
+                .set("category", categoryId)
                 .update();
 
         ctx.sessionAttribute("flash", "Статья успешно обновлена");
