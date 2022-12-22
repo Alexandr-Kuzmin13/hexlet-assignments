@@ -3,7 +3,7 @@ package exercise.controllers;
 import io.javalin.http.Handler;
 import io.ebean.PagedList;
 import java.util.List;
-import java.util.Objects;
+//import java.util.Objects;
 
 import exercise.domain.query.QArticle;
 import exercise.domain.Article;
@@ -83,14 +83,15 @@ public final class ArticleController {
         // BEGIN
         String title = ctx.formParam("title");
         String body = ctx.formParam("body");
+        
         long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
 
         Category category = new QCategory()
                 .id.equalTo(categoryId)
                 .findOne();
         
-       long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
-
+        long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+        
         new QArticle()
                 .id.equalTo(id)
                 .asUpdate()
