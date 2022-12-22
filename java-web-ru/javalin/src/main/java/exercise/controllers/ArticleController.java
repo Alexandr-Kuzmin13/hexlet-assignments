@@ -66,11 +66,11 @@ public final class ArticleController {
 
     public static Handler editArticle = ctx -> {
         // BEGIN
-        long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+        //long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
 
-        Article article = new QArticle()
-                .id.equalTo(id)
-                .findOne();
+        //Article article = new QArticle()
+                //.id.equalTo(id)
+                //.findOne();
         List<Category> categories = new QCategory().findList();
 
         ctx.attribute("categories", categories);
