@@ -74,7 +74,7 @@ public final class ArticleController {
         List<Category> categories = new QCategory().findList();
 
         ctx.attribute("categories", categories);
-        ctx.attribute("article", article);
+        //ctx.attribute("article", article);
         ctx.render("articles/edit.html");
         // END
     };
