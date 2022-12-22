@@ -84,13 +84,14 @@ public final class ArticleController {
         String title = ctx.formParam("title");
         String body = ctx.formParam("body");
         long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
+        long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
 
         Category category = new QCategory()
                 .id.equalTo(categoryId)
                 .findOne();
 
         new QArticle()
-                .id.equalTo(categoryId)
+                .id.equalTo(id)
                 .asUpdate()
                 .set("title", title)
                 .set("body", body)
