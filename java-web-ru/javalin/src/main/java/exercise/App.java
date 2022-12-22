@@ -54,13 +54,12 @@ public final class App {
                 get(ArticleController.listArticles);
                 post(ArticleController.createArticle);
                 get("new", ArticleController.newArticle);
-                post(ArticleController.updateArticle);
 
                 path("{id}", () -> {
 
                     get(ArticleController.showArticle);
                     get("edit", ArticleController.editArticle);
-                    //post("edit", ArticleController.updateArticle);
+                    post("edit", ArticleController.updateArticle);
                     get("delete", ArticleController.deleteArticle);
                     post("delete", ArticleController.destroyArticle);
 
