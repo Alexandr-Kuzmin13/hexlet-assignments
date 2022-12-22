@@ -3,6 +3,7 @@ package exercise.controllers;
 import io.javalin.http.Handler;
 import io.ebean.PagedList;
 import java.util.List;
+import java.util.Objects;
 
 import exercise.domain.query.QArticle;
 import exercise.domain.Article;
@@ -66,6 +67,7 @@ public final class ArticleController {
     public static Handler editArticle = ctx -> {
         // BEGIN
         long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+
         Article article = new QArticle()
                 .id.equalTo(id)
                 .findOne();
@@ -85,8 +87,13 @@ public final class ArticleController {
                 .id.equalTo(categoryId)
                 .findOne();
 
-        Article article = new Article(title, body, category);
-        article.update();
+        new QArticle()
+                .id.equalTo(categoryId)
+                .asUpdate()
+                .set("title", title)
+                .set("body", body)
+                .set("category", category)
+                .update();
 
         ctx.sessionAttribute("flash", "Статья успешно обновлена");
         ctx.redirect("/articles");
@@ -108,16 +115,11 @@ public final class ArticleController {
 
     public static Handler destroyArticle = ctx -> {
         // BEGIN
-        String title = ctx.formParam("title");
-        String body = ctx.formParam("body");
-        long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
+        long id = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
 
-        Category category = new QCategory()
-                .id.equalTo(categoryId)
-                .findOne();
-
-        Article article = new Article(title, body, category);
-        article.delete();
+        new QArticle()
+                .id.equalTo(id)
+                .delete();
 
         ctx.sessionAttribute("flash", "Статья успешно удалена");
         ctx.redirect("/articles");
