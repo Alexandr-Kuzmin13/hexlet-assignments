@@ -81,13 +81,6 @@ class AppTest {
         String actualEmail = "eltsin@gmail.com";
         String actualPassword = "123456";
 
-        /*HttpResponse<String> responsePost = Unirest
-                .post(baseUrl + "/users")
-                .field("firstName", actualFirstName)
-                .field("lastName", actualLastName)
-                .field("email", actualEmail)
-                .field("password", actualPassword)
-                .asEmpty();*/
         HttpResponse responsePost = Unirest
                 .post(baseUrl + "/users")
                 .field("firstName", actualFirstName)
