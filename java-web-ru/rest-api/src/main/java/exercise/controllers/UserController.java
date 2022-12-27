@@ -91,12 +91,9 @@ public class UserController implements CrudHandler {
 
     public void delete(Context ctx, String id) {
         // BEGIN
-        String body = ctx.body();
-        var user = DB.json().toBean(User.class, body);
-        user.delete();
-        /*new QUser()
+        new QUser()
                 .id.equalTo(Long.parseLong(id))
-                .delete();*/
+                .delete();
         // END
     };
 }
