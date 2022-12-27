@@ -18,37 +18,23 @@ public class UserController implements CrudHandler {
 
     public void getAll(Context ctx) {
         // BEGIN
-        /*List<User> users = new QUser()
-                .orderBy()
-                .id.asc()
-                .findList();
-
-        String json = DB.json().toJson(users);
-        ctx.json(json);*/
         List<User> users = new QUser()
                 .orderBy()
                 .id.asc()
                 .findList();
-        String json = DB.json().toJson(users);
 
+        String json = DB.json().toJson(users);
         ctx.json(json);
         // END
     };
 
     public void getOne(Context ctx, String id) {
         // BEGIN
-        /*User user = new QUser()
+        User user = new QUser()
                 .id.equalTo(Integer.parseInt(id))
                 .findOne();
 
         String json = DB.json().toJson(user);
-        ctx.json(json);*/
-        User user = new QUser()
-                .id.equalTo(Long.parseLong(id))
-                .findOne();
-
-        String json = DB.json().toJson(user);
-
         ctx.json(json);
         // END
     };
@@ -56,7 +42,7 @@ public class UserController implements CrudHandler {
     public void create(Context ctx) {
 
         // BEGIN
-        /*String body = ctx.body();
+        String body = ctx.body();
         var user = DB.json().toBean(User.class, body);
 
         var errors = ctx.bodyValidator(User.class)
@@ -81,8 +67,8 @@ public class UserController implements CrudHandler {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        printWriter.write("Пользователь создан успешно!");*/
-        User user = ctx.bodyValidator(User.class)
+        printWriter.write("Пользователь создан успешно!");
+        /*User user = ctx.bodyValidator(User.class)
                 .check(it -> it.getFirstName().length() > 0, "First name can not be empty")
                 .check(it -> it.getLastName().length() > 0, "Last name can not be empty")
                 .check(it -> EmailValidator.getInstance().isValid(it.getEmail()), "Should be valid email")
@@ -90,7 +76,7 @@ public class UserController implements CrudHandler {
                 .check(it -> it.getPassword().length() >= 4, "Password must contain at least 4 characters")
                 .get();
 
-        user.save();
+        user.save();*/
         // END
     };
 
@@ -105,12 +91,12 @@ public class UserController implements CrudHandler {
 
     public void delete(Context ctx, String id) {
         // BEGIN
-        /*String body = ctx.body();
+        String body = ctx.body();
         var user = DB.json().toBean(User.class, body);
-        user.delete();*/
-        new QUser()
+        user.delete();
+        /*new QUser()
                 .id.equalTo(Long.parseLong(id))
-                .delete();
+                .delete();*/
         // END
     };
 }
