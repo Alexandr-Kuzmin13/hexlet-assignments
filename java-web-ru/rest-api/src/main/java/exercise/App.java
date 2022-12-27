@@ -18,6 +18,9 @@ public final class App {
         app.get("/", ctx -> ctx.result("REST API"));
 
         // BEGIN
+        /*app.routes(() -> {
+            crud("users/{id}", new UserController());
+        });*/
         app.routes(() -> {
             crud("/api/v1/users/{id}", new UserController());
         });
