@@ -37,12 +37,11 @@ public class PeopleController {
     }
     @DeleteMapping(path = "/{id}")
     public void deletePerson(@PathVariable long id) {
-        //this.personRepository.delete(getPerson(id));
         this.personRepository.deleteById(id);
     }
     @PatchMapping(path = "/{id}")
-    public void upDatePerson(@PathVariable long id) {
-        this.personRepository.save(getPerson(id));
+    public void upDatePerson(@RequestBody Person person) {
+        this.personRepository.save(person);
     }
     // END
 }
