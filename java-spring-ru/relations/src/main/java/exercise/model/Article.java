@@ -23,11 +23,5 @@ public class Article {
     private String body;
     @ManyToOne
     private Category category;
-
-    public Article(String name, String body, Category category) {
-        this.name = name;
-        this.body = body;
-        this.category = category;
-    }
 }
 // END

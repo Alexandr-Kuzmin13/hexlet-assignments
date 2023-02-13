@@ -18,7 +18,10 @@
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="rusglagol (generated)" id="1676275861581-3">
-        <addForeignKeyConstraint baseColumnNames="category_id" baseTableName="article" constraintName="FKy5kkohbk00g0w88fi05k2hcw" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="category" validate="true"/>
+    <changeSet author="rusglagol (generated)" id="1676278498701-3">
+        <dropUniqueConstraint constraintName="UK_HPBXO642S9Q9TFF36DYNFESH" tableName="CATEGORY_ARTICLE"/>
+    </changeSet>
+    <changeSet author="rusglagol (generated)" id="1676278498701-4">
+        <dropTable tableName="CATEGORY_ARTICLE"/>
     </changeSet>
 </databaseChangeLog>
