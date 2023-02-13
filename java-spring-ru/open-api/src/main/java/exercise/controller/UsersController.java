@@ -92,7 +92,6 @@ public class UsersController {
         @ApiResponse(responseCode = "404", description = "User with that id not found")
     })
     @PatchMapping(path = "/{id}")
-    @ResponseStatus(HttpStatus.CREATED)
     public void upDateUser(
             @Parameter(description = "User data to save")
             @PathVariable long id, @RequestBody User user) {
