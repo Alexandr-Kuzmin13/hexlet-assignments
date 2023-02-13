@@ -33,10 +33,13 @@ public class CourseController {
     @GetMapping(path = "/{id}/previous")
     public Iterable<Course> getCourseList(@PathVariable long id) {
         Course course = courseRepository.findById(id);
-        List<Long> ids = Arrays.stream(course.getPath().split("\\."))
-                .map(Long::parseLong)
-                .collect(Collectors.toList());
-        return courseRepository.findAllById(ids);
+        if (course.getPath() != null && !"".equals(course.getPath())) {
+            List<Long> ids = Arrays.stream(course.getPath().split("\\."))
+                    .map(Long::parseLong)
+                    .collect(Collectors.toList());
+            return courseRepository.findAllById(ids);
+        }
+        return null;
     }
     // END
 
