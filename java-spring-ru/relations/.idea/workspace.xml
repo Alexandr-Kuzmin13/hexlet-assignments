@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59dc7269-dfa1-4e67-995e-7d95eadadf31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/advanced-streams/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/advanced-streams/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/advanced-streams/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/advanced-streams/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/generics/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/generics/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/generics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/lambdas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/lambdas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/lists/src/main/java/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/lists/src/main/java/exercise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/other-collections/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/other-collections/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/streams/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/streams/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/streams/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/streams/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/streams/src/main/java/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/streams/src/main/java/exercise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-collections-ru/tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-collections-ru/tests/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-oop-ru/classes-and-objects/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-oop-ru/classes-and-objects/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-oop-ru/inheritance/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-oop-ru/inheritance/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-oop-ru/patterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-oop-ru/patterns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-oop-ru/reflections/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-oop-ru/reflections/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../migrations/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../migrations/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexlet.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexlet.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/controller/ArticlesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/controller/ArticlesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/model/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-orm/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-orm/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-orm/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-orm/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-orm/hexlet.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-orm/hexlet.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-orm/src/main/java/exercise/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-orm/src/main/java/exercise/controller/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/crud-in-db/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/crud-in-db/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/crud-in-db/src/main/java/exercise/servlet/ArticlesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/crud-in-db/src/main/java/exercise/servlet/ArticlesServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/deploy/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/deploy/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/html/src/main/java/exercise/servlet/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/html/src/main/java/exercise/servlet/UsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/javalin/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/javalin/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/javalin/src/main/java/exercise/controllers/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/javalin/src/main/java/exercise/controllers/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/javalin/src/main/resources/templates/articles/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/javalin/src/main/resources/templates/articles/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/jdbc/src/main/java/exercise/servlet/ArticlesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/jdbc/src/main/java/exercise/servlet/ArticlesServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/jdbc/src/main/webapp/WEB-INF/templates/articles/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/jdbc/src/main/webapp/WEB-INF/templates/articles/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/logging/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/logging/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/logging/src/main/webapp/WEB-INF/templates/layouts/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/logging/src/main/webapp/WEB-INF/templates/layouts/application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/logging/src/main/webapp/WEB-INF/templates/users/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/logging/src/main/webapp/WEB-INF/templates/users/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/orm/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/orm/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/orm/src/main/java/exercise/servlet/ArticlesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/orm/src/main/java/exercise/servlet/ArticlesServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/rest-api/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/rest-api/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/rest-api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/rest-api/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/rest-api/src/main/java/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/rest-api/src/main/java/exercise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/rest-api/src/main/java/exercise/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/rest-api/src/main/java/exercise/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/servlet/src/main/java/exercise/servlet/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/servlet/src/main/java/exercise/servlet/WelcomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/templating/src/main/java/exercise/servlet/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/templating/src/main/java/exercise/servlet/UsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/tests/src/test/java/exercise/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/tests/src/test/java/exercise/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/hexlet.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/hexlet.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/java/exercise/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/java/exercise/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/layouts/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/layouts/application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-web-ru/validation/src/main/resources/templates/users/show.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Lg4XYgaptkCvvKd4Hsk00tYwvU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/rusglagol/java-project-61/app/.gradle",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../../../../java-project-71/app/gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59dc7269-dfa1-4e67-995e-7d95eadadf31" name="Changes" comment="" />
+      <created>1676279432407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676279432407</updated>
+    </task>
+    <servers />
+  </component>
+</project>

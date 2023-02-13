@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-    <changeSet author="rusglagol (generated)" id="1676275861581-1">
+    <changeSet author="rusglagol (generated)" id="1676279605391-1">
         <createTable tableName="article">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints primaryKey="true" primaryKeyName="articlePK"/>
@@ -10,7 +10,7 @@
             <column name="category_id" type="BIGINT"/>
         </createTable>
     </changeSet>
-    <changeSet author="rusglagol (generated)" id="1676275861581-2">
+    <changeSet author="rusglagol (generated)" id="1676279605391-2">
         <createTable tableName="category">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints primaryKey="true" primaryKeyName="categoryPK"/>
@@ -18,10 +18,7 @@
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="rusglagol (generated)" id="1676278498701-3">
-        <dropUniqueConstraint constraintName="UK_HPBXO642S9Q9TFF36DYNFESH" tableName="CATEGORY_ARTICLE"/>
-    </changeSet>
-    <changeSet author="rusglagol (generated)" id="1676278498701-4">
-        <dropTable tableName="CATEGORY_ARTICLE"/>
+    <changeSet author="rusglagol (generated)" id="1676279605391-3">
+        <addForeignKeyConstraint baseColumnNames="category_id" baseTableName="article" constraintName="FKy5kkohbk00g0w88fi05k2hcw" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="category" validate="true"/>
     </changeSet>
 </databaseChangeLog>
