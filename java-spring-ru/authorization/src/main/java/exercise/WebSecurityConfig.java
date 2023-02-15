@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             .antMatchers("/").permitAll()
             .antMatchers(POST, "/users").permitAll()
-            .antMatchers("/users/**").hasAnyAuthority(UserRole.USER.name(), UserRole.ADMIN.name())
+            .antMatchers("/users").hasAnyAuthority(UserRole.USER.name(), UserRole.ADMIN.name())
             .antMatchers(DELETE, "/users/{id}").hasAuthority(UserRole.ADMIN.name())
             .and().httpBasic();
         // END
