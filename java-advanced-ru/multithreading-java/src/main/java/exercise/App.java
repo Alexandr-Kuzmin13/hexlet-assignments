@@ -2,6 +2,7 @@ package exercise;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class App {
@@ -13,15 +14,20 @@ class App {
 
         MaxThread thread1 = new MaxThread(numbers);
         thread1.start();
-        LOGGER.info(MaxThread.class.getName() + " start");
-        MaxThread.currentThread().interrupt();
-        LOGGER.info(MaxThread.class.getName() + " finish");
+        LOGGER.info("Thread " + thread1.getName() + " started");
 
         MinThread thread2 = new MinThread(numbers);
         thread2.start();
-        LOGGER.info(MinThread.class.getName() + " start");
-        MaxThread.currentThread().interrupt();
-        LOGGER.info(MinThread.class.getName() + " finish");
+        LOGGER.info("Thread " + thread2.getName() + " started");
+
+        try {
+            thread2.join();
+            LOGGER.log(Level.INFO, "Thread " + thread2.getName() + " finished");
+            thread1.join();
+            LOGGER.log(Level.INFO, "Thread " + thread1.getName() + " finished");
+        } catch (InterruptedException e) {
+            System.out.println("Поток был прерван");
+        }
 
         var minMax = new HashMap<String, Integer>();
 
