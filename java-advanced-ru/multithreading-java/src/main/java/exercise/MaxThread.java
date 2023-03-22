@@ -13,12 +13,13 @@ public class MaxThread extends Thread {
     @Override
     public void run() {
 
-        max = numbers[0];
+        var x = numbers[0];
         for (var i = 1; i < numbers.length; i++) {
-            if (max < numbers[i]) {
-                max = numbers[i];
+            if (x < numbers[i]) {
+                x = numbers[i];
             }
         }
+        max = x;
     }
 
     public int getMax() {

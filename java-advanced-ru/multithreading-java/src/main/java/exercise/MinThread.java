@@ -13,12 +13,13 @@ public class MinThread extends Thread {
     @Override
     public void run() {
 
-        min = numbers[0];
+        var x = numbers[0];
         for (var i = 1; i < numbers.length; i++) {
-            if (min > numbers[i]) {
-                min = numbers[i];
+            if (x > numbers[i]) {
+                x = numbers[i];
             }
         }
+        min = x;
     }
 
     public int getMin() {
